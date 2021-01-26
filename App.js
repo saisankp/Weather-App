@@ -8,8 +8,10 @@ import ReloadIcon from './components/ReloadIcon'
 import WeatherDetails from './components/WeatherDetails'
 import {colors} from './utils/index'
 import {FontAwesome5, MaterialCommunityIcons} from '@expo/vector-icons'
+import {WEATHER_API_KEY} from 'react-native-dotenv'
 
-const WEATHER_API_KEY = '00e6c4feed9f33daa09160be21affd07'
+//alternatively, you can uncomment the line below and add your own API key from https://openweathermap.org/api
+// const WEATHER_API_KEY = 
 const BASE_WEATHER_URL = 'https://api.openweathermap.org/data/2.5/weather?'
 
 export default function App() {
