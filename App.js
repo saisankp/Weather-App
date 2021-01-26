@@ -167,7 +167,7 @@ export default function App() {
     } else{
       return (
         <View style={styles.container}>
-          <Text style={{textAlign: 'center', marginBottom: 50, fontSize: 20}}>Retrieving the weather at your location...</Text>
+          <Text style={{textAlign: 'center', marginBottom: 50, fontSize: 20}}>Retrieving the weather at your location... </Text>
           <ActivityIndicator size="large" color={colors.PRIMARY_COLOR}/>
           <StatusBar style="auto" />
         </View>
