@@ -3,15 +3,17 @@ import { View, Text, StyleSheet} from 'react-native'
 import {colors} from '../utils/index'
 import {FontAwesome5, MaterialCommunityIcons} from '@expo/vector-icons'
 
-
+//get the colors from index.js
 const { PRIMARY_COLOR, SECONDARY_COLOR, BORDER_COLOR } = colors
 
 export default function WeatherDetails({currentWeather, unitsSystem}) {
+    //split our data to get specific parts of it.
     const{
         main: {feels_like, humidity, pressure },
         wind: { speed }
     } = currentWeather
 
+    //get the windspeed according to the user's preferences.
     const windSpeed = unitsSystem == 'metric' ? `${Math.round(speed)} metres/s` : `${Math.round(speed)} miles/h`
 
     return (
