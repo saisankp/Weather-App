@@ -3,6 +3,7 @@ import { View, Text, StyleSheet, Platform } from 'react-native'
 import { Picker } from '@react-native-community/picker'
 import {colors} from '../utils/index'
 
+//get the colors from index.js
 const { PRIMARY_COLOR, SECONDARY_COLOR, BORDER_COLOR } = colors
 
 
