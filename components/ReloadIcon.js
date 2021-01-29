@@ -4,6 +4,7 @@ import { Ionicons } from '@expo/vector-icons'
 import {colors} from '../utils/index'
 
 export default function ReloadIcon({load}) {
+    //get the name of the reload icon we will use.
     const reloadIconName = Platform.OS == 'ios' ?  "ios-refresh" : 'md-refresh'
     return (
         <View style={styles.reloadIcon}>
