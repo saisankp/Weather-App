@@ -2,7 +2,8 @@
 <h2 align="center">By Prathamesh Sai</h2>
 <img src="app-demo.gif" width="300" align="right"/>
 <h3 align="center">Discover the weather.</h3>
-<p>This is a simple weather app for IOS with an aesthetically pleasing UI, showing the weather details for the user based on their location. <br><br> The temperature can be shown in either °C (Celsius) or °F (Fahrenheit) based on the user's preferences by toggling the picker. <br><br> The app will greet you with "Good Morning", "Good Evening", or "Good Night" based on the local time of the user.</p>
+<p>As someone who lives in Ireland, it was difficult to get accurate weather information on a regular basis because of the volatile weather conditions here. One second it could be raining, and 5 minutes later, the sun could be out. <br><br>
+Voilà! This is a simple weather app for IOS with an aesthetically pleasing UI, showing the weather details for the user based on their location. <br><br> The temperature can be shown in either °C (Celsius) or °F (Fahrenheit) based on the user's preferences by toggling the picker. <br><br> The app will greet you with "Good Morning", "Good Evening", or "Good Night" based on the local time of the user.</p>
 <p>The app displays important weather details such as the temperature, a short description of the weather, what the weather feels like with human perception, the humidity, the wind speed (in both metres/second and miles/hour based on whether the user prefers the metric system or the  imperial system), and the pressure in hPa (hectopascals). </p>
 <p>The user can refresh the page by pressing the refresh button to update the weather details being shown.</p>
 
