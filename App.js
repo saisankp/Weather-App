@@ -12,8 +12,6 @@ import {FontAwesome5, MaterialCommunityIcons} from '@expo/vector-icons'
 //If you wish to use this project, you are welcome to include your API key in a new .env file.
 import {WEATHER_API_KEY} from 'react-native-dotenv'
 
-//alternatively, you can uncomment the line below and add your own API key from https://openweathermap.org/api
-//const WEATHER_API_KEY = 
 const BASE_WEATHER_URL = 'https://api.openweathermap.org/data/2.5/weather?'
 
 export default function App() {
@@ -73,89 +71,24 @@ export default function App() {
   //intitialize the output text as null.
   var output = null;
   
-  //use a simple switch statement (O(1) worst case asymptotic running time)
-  switch(hours) {
-    case 0:
-      output = "Good Night."
-      break;
-    case 1:
-      output = "Good Night."
-      break;
-    case 2:
-      output = "Good Night."
-      break;
-    case 3:
-      output = "Good Night."
-      break;
-    case 4:
-      output = "Good Night."
-      break;
-    case 5:
-      output = "Good Morning."
-      break;
-    case 6:
-      output =  "Good Morning."
-      break; 
-    case 7:
-      output =  "Good Morning."
-      break; 
-    case 8:
-      output =  "Good Morning."
-      break;
-    case 9:
-      output =  "Good Morning."
-      break;
-    case 10:
-      output =  "Good Morning."
-      break;
-    case 11:
-      output =  "Good Morning."
-      break;
-    case 12:
-      output = "Good Evening."
-      break;
-    case 13:
-      output = "Good Evening."
-      break;
-    case 14: 
-      output = "Good Evening."
-      break;
-    case 15:
-      output = "Good Evening."
-      break;
-    case 16:
-      output = "Good Evening."
-      break;
-    case 17:
-      output = "Good Evening."
-      break;
-    case 18:
-      output = "Good Evening."
-      break;
-    case 19:
-      output = "Good Evening."
-      break;
-    case 20:
-      output = "Good Night."
-      break;
-    case 21:
-      output = "Good Night."
-      break;
-    case 22:
-      output = "Good Night."
-      break;
-    case 23:
-      output = "Good Night."
-      break;
-    case 24:
-      output = "Good Night."
-      break;
-    //A default option containing an error message.
-    default:
-      output = "Something went wrong."
+  //We want to change the welcome message based on the user's time of day!
+  if(hours <= 4){
+    output = "Good Night."
+  }
+  else if(hours <= 11){
+    output = "Good Morning."
+  }
+  else if(hours <= 19){
+    output = "Good Evening."
+  }
+  else if (hours <= 23){
+    output = "Good Night."
+  }
+  else{
+    output = "Sorry, something went wrong."
   }
   
-  // Initialize the icon which will be displayed beside the message (with the constant "output").
+  //initialize the icon which will be displayed beside the message (with the constant "output").
   var icon = null
   
   //if it's the night, then we display the moon icon from Font Awesome.
