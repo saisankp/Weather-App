@@ -2,18 +2,15 @@ import React from 'react'
 import { View, Text, StyleSheet, Image} from 'react-native'
 import {colors} from '../utils/index'
 
-//get colors from index.js
 const { PRIMARY_COLOR, SECONDARY_COLOR } = colors
 
 export default function WeatherInfo({currentWeather}) {
-    //split our data into different parts to use them.
     const {
         main: {temp},
         weather: [details],
         name,
     } = currentWeather
     
-    //declare constants
     const { icon, main, description } = details
     const iconUrl = `https://openweathermap.org/img/wn/${icon}@4x.png`
     return (
