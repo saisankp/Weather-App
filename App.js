@@ -48,9 +48,6 @@ export default function App() {
   var hours = new Date().getHours()
   var output = null;
   var icon = null
-
-
-  //We want to change the welcome message based on the user's time of day!
   if (hours <= 11) {
     output = "Good Morning."
     icon = "sun"
@@ -96,7 +93,6 @@ export default function App() {
       </View>
     )
   }
-
 }
 
 const styles = StyleSheet.create({
